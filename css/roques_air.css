@@ -1,0 +1,76 @@
+body {
+    width: 1081px; /*Tamaño del banner*/
+    background-color: white;
+    margin: 0 auto;
+    background-image: url('../img/roquesair_background.jpg');
+}
+
+#botonera {
+    width: 1005px;
+    margin: 0 auto;
+}
+
+a.boton {
+    margin-bottom: 10px;
+    display:block;
+    width: 121px;
+    height: 29px;
+    float:left;
+}
+
+#boton-home {
+    background: url('../img/botonera_home.jpg') center top no-repeat;
+}
+
+    #boton-home:hover {
+        background: url('../img/botonera_home_hover.jpg');
+    }
+
+#boton-empresa {
+    background: url('../img/botonera_empresa.jpg') center top no-repeat;
+}
+    #boton-empresa:hover {
+        background: url('../img/botonera_empresa_hover.jpg');
+    }
+
+#boton-contactos {
+    background: url('../img/botonera_contactos.jpg') center top no-repeat;
+}
+    #boton-contactos:hover {
+        background: url('../img/botonera_contactos_hover.jpg');
+    }
+
+#boton-faq {
+    background: url('../img/botonera_faq.jpg') center top no-repeat;
+}
+    #boton-faq:hover {
+        background: url('../img/botonera_faq_hover.jpg');
+    }
+
+#boton-vuelos {
+    background: url('../img/botonera_vuelos.jpg') center top no-repeat;
+}
+    #boton-vuelos:hover {
+        background: url('../img/botonera_vuelos_hover.jpg');
+    }
+
+#boton-buscar {
+    background: url('../img/botonera_buscar.jpg') center top no-repeat;
+}
+    #boton-buscar:hover {
+        background: url('../img/botonera_buscar_hover.jpg');
+    }
+
+#search-area {
+    background: url('../img/search_bar.jpg') center top no-repeat;
+    width: 276px;
+    height: 29px;
+    float:left;
+}
+
+#input-search {
+    margin-top: 3px;
+    margin-left: 60px;
+    width:200px;
+    font-size:small;
+}
