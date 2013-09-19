@@ -79,6 +79,7 @@ a.menu {
 
 #mainbox {
     width: 1000px;
+    height:500px;
     margin: 0 auto;
     position:relative;
     top: 90px;
@@ -98,11 +99,12 @@ a.menu {
 }
 
 #mainbox-leftcolumn-bottom {
-
+    height: 469px;
+    width: 180px;
 }
 
 #mainbox-rightcolumn {
-    background-color:red;
+    background-color:#0A668E;
     position:absolute;
     margin-left:180px;
     width: 820px;
@@ -116,9 +118,44 @@ a.menu {
 }
 
 #mainbox-rightcolumn-center {
-
+    height: 469px;
+    width: 820px;
 }
 
-#mainbox-rightcolumn-bottom {
-
+.mainbox-rightcolumn-bottom {
+    height: 31px;
+    width: 820px;
+    background: url('../img/mainbox/bottom_descripcion.png') center top no-repeat;
 }
+
+.banner-texto {
+    color: white;
+    text-align: right;
+    padding-top: 5px;
+    padding-right: 20px;
+}
+
+.banner-pic {
+    height: 438px;
+    width: 820px;
+}
+
+.banner {
+    height: 469px;
+    width: 810px;
+    overflow: auto; 
+}
+    .banner li {
+        list-style: none; 
+        height: 479px;
+        width: 820px;
+        
+    }
+        .banner ul { 
+            margin:0 0 0 0; 
+            padding-left: 0px;
+        }
+
+        .banner ul li { 
+            float: left; 
+        }
