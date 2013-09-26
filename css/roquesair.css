@@ -9,7 +9,8 @@ body {
     width: 1005px;
     margin: 0 auto;
     position:relative;
-    top: 30px; 
+    top: 30px;
+    background-color:red; 
 }
 
 a.menu {
@@ -20,51 +21,75 @@ a.menu {
     float:left;
 }
 
+#preload-1 {
+    background: url('../img/menu/menu_home_hover.jpg') center top no-repeat;
+    display:none;
+}
+#preload-2 {
+    background: url('../img/menu/menu_empresa_hover.jpg') center top no-repeat;
+    display:none;
+}
+#preload-3 {
+    background: url('../img/menu/menu_contactos_hover.jpg') center top no-repeat;
+    display:none;
+}
+#preload-4 {
+    background: url('../img/menu/menu_faq_hover.jpg') center top no-repeat;
+    display:none;
+}
+#preload-5 {
+    background: url('../img/menu/menu_vuelos_hover.jpg') center top no-repeat;
+    display:none;
+}
+#preload-6 {
+    background: url('../img/menu/menu_buscar_hover.jpg') center top no-repeat;
+    display:none;
+}
+
 #menu-home {
     background: url('../img/menu/menu_home.jpg') center top no-repeat;
 }
-
     #menu-home:hover {
-        background: url('../img/menu/menu_home_hover.jpg');
+        background: url('../img/menu/menu_home_hover.jpg') center top no-repeat;
     }
 
 #menu-empresa {
     background: url('../img/menu/menu_empresa.jpg') center top no-repeat;
 }
     #menu-empresa:hover {
-        background: url('../img/menu/menu_empresa_hover.jpg');
+        background: url('../img/menu/menu_empresa_hover.jpg') center top no-repeat;
     }
 
 #menu-contactos {
     background: url('../img/menu/menu_contactos.jpg') center top no-repeat;
 }
     #menu-contactos:hover {
-        background: url('../img/menu/menu_contactos_hover.jpg');
+        background: url('../img/menu/menu_contactos_hover.jpg') center top no-repeat;
     }
 
 #menu-faq {
     background: url('../img/menu/menu_faq.jpg') center top no-repeat;
 }
     #menu-faq:hover {
-        background: url('../img/menu/menu_faq_hover.jpg');
+        background: url('../img/menu/menu_faq_hover.jpg') center top no-repeat;
     }
 
 #menu-vuelos {
     background: url('../img/menu/menu_vuelos.jpg') center top no-repeat;
 }
     #menu-vuelos:hover {
-        background: url('../img/menu/menu_vuelos_hover.jpg');
+        background: url('../img/menu/menu_vuelos_hover.jpg') center top no-repeat;
     }
 
 #menu-buscar {
     background: url('../img/menu/menu_buscar.jpg') center top no-repeat;
 }
     #menu-buscar:hover {
-        background: url('../img/menu/menu_buscar_hover.jpg');
+        background: url('../img/menu/menu_buscar_hover.jpg') center top no-repeat;
     }
 
 #search-area {
-    background: url('../img/search_bar.jpg') center top no-repeat;
+    background: url('../img/menu/search_bar.jpg') center top no-repeat;
     width: 276px;
     height: 29px;
     float:left;
@@ -79,8 +104,8 @@ a.menu {
 
 #mainbox {
     background-color:#0A668E;
-    width: 1000px;
     height:510px;
+    width: 1000px;
     margin: 0 auto;
     position:relative;
     top: 90px;
@@ -239,10 +264,42 @@ a.menu {
 	height: 140px;
 }
 
-.ac-container input:checked ~ article.ac-medium{
-	height: 180px;
+#lightbox-top {
+    width: 1000px;
+    height: 8px;
+    background: url('../img/bar.jpg') center top no-repeat;
 }
 
-.ac-container input:checked ~ article.ac-large{
-	height: 230px;
+#lightbox-center {
+    height: 494px;
+    width: 100%;
 }
+
+#lightbox-center-left {
+    position:absolute;
+    width: 535px;
+    height: 494px;
+    background: url('../img/fondo_texto.jpg') left bottom no-repeat;
+}
+
+#lightbox-center-right {
+    position:absolute;
+    margin-left:535px;
+    height: 494px;
+    width:465px;
+    background: url('../img/empresa_avion.jpg') center top no-repeat;
+}
+
+#lightbox-bottom {
+    height: 8px;
+    width: 1000px;
+    background: url('../img/bar.jpg') center top no-repeat;
+}
+
+#texto_empresa {
+    padding: 50px 50px 50px 50px;
+}
+    #texto_empresa p {
+        text-align:justify;
+        line-height: 150%;
+    }
