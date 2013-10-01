@@ -19,3 +19,12 @@ function onClickRadio(val) {
         idElementoActivo = "";
     }
 };
+
+function loadTexto(file) {
+    $("#mycustomhtml").load(file, function (response, status, xhr) {
+        if (status == "error") {
+            var msg = "Error: ";
+            alert(msg + xhr.status + " " + xhr.statusText);
+        }
+    })
+};
