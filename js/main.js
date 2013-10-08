@@ -22,20 +22,20 @@ $(function () {
 
 var idElementoActivo = "";
 function onClickRadio(val) {
-    if (val.id != idElementoActivo) {
+    if (val.id !== idElementoActivo) {
         idElementoActivo = val.id;
     }
     else {
         val.checked = false;
         idElementoActivo = "";
     }
-};
+}
 
 function loadTexto(file) {
     $("#mycustomhtml").load(file, function (response, status, xhr) {
-        if (status == "error") {
+        if (status === "error") {
             var msg = "Error: ";
             alert(msg + xhr.status + " " + xhr.statusText);
         }
-    })
-};
+    });
+}

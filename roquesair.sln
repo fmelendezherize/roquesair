@@ -1,24 +1,32 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2012 for Web
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "roquesair", "..\..\..\..\..\..\Web\Projects\roquesair\", "{0C7CEBE3-41EA-4A64-9B66-F42F848AA86E}"
+# Visual Studio 2012
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "roquesair", ".", "{0C7CEBE3-41EA-4A64-9B66-F42F848AA86E}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/roquesair"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\..\..\Web\Projects\roquesair\"
+		Debug.AspNetCompiler.PhysicalPath = "..\roquesair\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\roquesair\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/roquesair"
-		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\..\..\Web\Projects\roquesair\"
+		Release.AspNetCompiler.PhysicalPath = "..\roquesair\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\roquesair\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "52145"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CFC911B7-48C4-4A0E-970D-5343C4227E9E}"
+	ProjectSection(SolutionItems) = preProject
+		WE-browsers.xml = WE-browsers.xml
+		WE-Markdown.css = WE-Markdown.css
+		..\..\..\Users\admin-PC\AppData\Local\Microsoft\VisualStudio\11.0\Extensions\jaf3cukm.2s5\schemas\WE-Palette.css = ..\..\..\Users\admin-PC\AppData\Local\Microsoft\VisualStudio\11.0\Extensions\jaf3cukm.2s5\schemas\WE-Palette.css
+		WE-settings.xml = WE-settings.xml
 	EndProjectSection
 EndProject
 Global
