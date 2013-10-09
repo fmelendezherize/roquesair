@@ -9,8 +9,9 @@ $(function () {
     });
 });
 
+var slidey;
 $(function () {
-    $('.dataaeronave-banner').unslider({
+     slidey = $('.dataaeronave-banner').unslider({
         speed: 1000,               //  The speed to animate each slide (in milliseconds)
         delay: 6000,              //  The delay between slide animations (in milliseconds)
         complete: function () { },  //  A function that gets called after every slide animation
@@ -39,3 +40,28 @@ function loadTexto(file) {
         }
     });
 }
+
+function onClickVerVideo() {
+    if ($("#DataAeronaveVideo").is(":visible")) {
+        $("#linkiado").text("Ver Video");
+        $("#DataAeronaveVideo").hide();
+        $("#DataAeronaveBanner").show();
+    } else {
+        $("#linkiado").text("Ver Fotos");
+        $("#DataAeronaveVideo").show();
+        $("#DataAeronaveBanner").hide();
+    }
+    return false;    
+}
+
+//$(document).ready(function () {
+//    $('#linkiado').click(function () {
+//        //$("#DataAeronaveBanner").hide("normal", function () {
+//        //    var slidey = $('.dataaeronave-banner').unslider(), data = slidey.data('unslider');
+//        //    $("#DataAeronaveVideo").css("display", "block")
+//        //});
+
+//        $("#DataAeronaveBanner").hide();
+//        $("#DataAeronaveVideo").show();
+//    });
+//});

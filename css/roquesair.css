@@ -414,10 +414,8 @@ a.menu {
 	background-repeat: no-repeat;
 	padding-top: 30px;
 	padding-bottom:30px;
-	font-family:'TrajanPro-Regular', 'Tahoma';
-	/*font-family:'MyriadPro-Regular', Tahoma;*/
-	font-weight:600;
-	font-size:10pt;
+	font-family:'TrajanPro-Regular', 'MyriadPro-Regular', 'Tahoma';
+	font-size: small;
 }
 	.dataaeronave table {
 		border:none;
@@ -461,4 +459,35 @@ a.menu {
 		height:281px;
 		width: 529px;
 	}
+
+#dataaeronave-linkvideo {
+	padding-bottom: 15px;
+	padding-left: 15px;
+	background-image: url('../img/data-aeronave/btn_play_video.jpg');
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+	#dataaeronave-linkvideo a {
+		padding-left: 15px;
+		color:#0A668E;
+		text-decoration:none;
+		font-family:'TrajanPro-Regular', 'Tahoma';
+	}
+		#dataaeronave-linkvideo a:visited {
+			color:#0A668E;
+			border:none;
+		}
+		#dataaeronave-linkvideo a:hover {
+			text-decoration:underline;
+		}
+
+#DataAeronaveVideo {
+	float:left;
+	width: 529px;
+	height:281px;
+	overflow: hidden;
+	background-color:red;
+	display:none;
+}
+
 

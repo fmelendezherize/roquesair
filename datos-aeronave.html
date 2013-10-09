@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -161,7 +161,7 @@
                 <div id="dataaeronave-mainbox-rightcolumn-top" class="banner-texto">Cessna Citation 500</div>
                 <div id="dataaeronave-mainbox-rightcolumn-center">
                     <div id="dataaeronave-mainbox-rightcolumn-center-left">
-                        <div class="dataaeronave-banner">
+                        <div id="DataAeronaveBanner" class="dataaeronave-banner">
                             <ul>
                                 <li>
                                     <img src="img/data-aeronave/citation-500/01.jpg" alt=""/>
@@ -186,11 +186,16 @@
                                 </li>
                             </ul>
                         </div>
+                        <div id="DataAeronaveVideo">
+                            <!--<iframe type="text/html" width="529" height="281" src="https://www.youtube.com/watch?v=7L37aMk_XXE" frameborder="0"></iframe>-->
+                            <iframe width="529" height="281" src="//www.youtube.com/embed/j13ch--ZRF4" frameborder="0" allowfullscreen></iframe>
+                        </div>
                         <div id="dataaeronave-mainbox-rightcolumn-center-right">
                             <img src="img/data-aeronave/ficha_aeronave.jpg" alt="" />
                         </div>
                     </div>
                     <div id="dataaeronave-mainbox-rightcolumn-center-data">
+                        <div id="dataaeronave-linkvideo"><a id="linkiado" href="javascript:void(0)">Ver Video</a></div>
                         <div id="dataaeronave-avionica" class="dataaeronave">
                             <table>
                                 <tr>
@@ -250,8 +255,16 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
+        <script src="js/vendor/unslider.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/vendor/unslider.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#linkiado').click(function () {
+                    onClickVerVideo();
+                });
+            });
+        </script>
+
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
