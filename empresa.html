@@ -14,9 +14,9 @@
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/roquesair.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
@@ -24,60 +24,42 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <!-- Add your site or application content here -->
-    <div>
-        <img src="img/roquesair_banner.jpg" alt="roquesair-banner" />
-    </div>
-
-    <div id="menu">
-        <a id="menu-home" class="menu" href="homepage.html" title="Ir a homepage"></a>
-        <a id="menu-empresa" class="menu" href="empresa.html" title="Ir a empresa"></a>
-        <a id="menu-contactos" class="menu" href="contactos.html" title="Ir a contactos"></a>
-        <a id="menu-faq" class="menu" href="faq.html" title="Ir a FAQ"></a>
-        <a id="menu-vuelos" class="menu" href="siteonconstruction.html" title="Ir a vuelos charter"></a>
-        <a id="menu-buscar" class="menu" href="siteonconstruction.html" title="Ir a motor de busqueda"></a>
-        <div id="search-area">
-            <input id="input-search" type="search" />
+    <div class="container maincontainer">
+        <div id="mainmenu" class="container menuroquesair">
+            <ul class="list-inline">
+                <li><a id="menu-home" href="homepage.html" target="_parent" title="Ir a Homepage"></a></li>
+                <li><a id="menu-empresa" href="empresa.html" target="_parent" title="Ir a Empresa"></a></li>
+                <li><a id="menu-contactos" href="contactos.html" target="_parent" title="Ir a Contactos"></a></li>
+                <li><a id="menu-faq" href="faq.html" target="_parent" title="Ir a FAQ"></a></li>
+                <li><a id="menu-vuelos" href="vuelos-charter.html" target="_parent" title="Ir a Vuelos Charter"></a></li>
+                <li><a id="menu-buscar" href="siteonconstruction.html" target="_parent" title="Ir a motor de b&#250;squeda"></a></li>
+                <li id="search-area">
+                    <input id="input-search" type="search" /></li>
+            </ul>
         </div>
-    </div>
-
-    <div id="mainbox">
-        <div id="lightbox-top"></div>
-        <div id="lightbox-center">
-            <div id="lightbox-center-left">
-                <div class="texto_empresa">
-                    <img src="img/logo_roques_color.png" alt="" />
-                    <article id="mycustomhtml">
-                    </article>
+        <div class="container lightbox">
+            <div class="row lightbox-bar"></div>
+            <div class="row">
+                <div id="lightbox-empresa-left" class="col-xs-12 col-md-6">
+                    <div>
+                        <img src="img/logo_roques_color.png" alt="Roques Air Logo" />
+                        <article>
+                            <b>Roques Air LLC</b> nace en el a&ntilde;o 2007 como respuesta a la creciente necesidad de un Brokerage de primera en el mundo de la aviaci&oacute;n comercial y de Negocios. A lo largo de 40 a&ntilde;os, su Presidente y Fundador Miguel Chac&oacute;n, Capit&aacute;n de la Aviaci&oacute;n de Negocios en Venezuela, desarroll&oacute; un profundo entendimiento de las caracter&iacute;sticas necesarias que debe tener una aeronave para cumplir con las expectativas espec&iacute;ficas de cada cliente. Este vasto conocimiento acumulado, es hoy la base sobre la cual trabaja un equipo multidisciplinario, dedicado a perpetuar los alt&iacute;simos standarts de calidad y atenci&oacute;n que desde hace 6 a&ntilde;os nos diferencian del resto.
+                        </article>
+                    </div>
                 </div>
+                <div id="lightbox-empresa-right" class="col-xs-12 col-md-6"></div>
             </div>
-            <div id="lightbox-center-center"></div>
-            <div id="lightbox-center-right">
-                <img src="img/jet_empresa.jpg" alt="" />
-            </div>
+            <div class="row lightbox-bar"></div>
         </div>
-        <div id="lightbox-bottom"></div>
-    </div>
-
-    <div style="display: none">
-        <div id="#preload-1" />
-        <div id="#preload-2" />
-        <div id="#preload-3" />
-        <div id="#preload-4" />
-        <div id="#preload-5" />
-        <div id="#preload-6" />
     </div>
 
     <!--boilerplate-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/vendor/unslider.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            loadTexto("Empresa.txt");
-        });
-    </script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

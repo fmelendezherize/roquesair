@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>RoquesAir Homepage</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!-- Add your site or application content here -->
+    <div class="container maincontainer">
+        <div id="mainmenu" class="container menuroquesair">
+            <ul class="list-inline">
+                <li><a id="menu-home" href="homepage.html" target="_parent" title="Ir a Homepage"></a></li>
+                <li><a id="menu-empresa" href="empresa.html" target="_parent" title="Ir a Empresa"></a></li>
+                <li><a id="menu-contactos" href="contactos.html" target="_parent" title="Ir a Contactos"></a></li>
+                <li><a id="menu-faq" href="faq.html" target="_parent" title="Ir a FAQ"></a></li>
+                <li><a id="menu-vuelos" href="vuelos-charter.html" target="_parent" title="Ir a Vuelos Charter"></a></li>
+                <li><a id="menu-buscar" href="siteonconstruction.html" target="_parent" title="Ir a motor de b&#250;squeda"></a></li>
+                <li id="search-area">
+                    <input id="input-search" type="search" /></li>
+            </ul>
+        </div>
+        <div class="container lightbox">
+            <div class="row lightbox-bar"></div>
+            <div class="lightbox-center">
+                <img src="img/logo_roques.png"" alt="Roques Air Logo" /><h2>Vuelos Charter</h2>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <h3>Informaci&#243;n Personal</h3>
+                        <form class="form-inline" role="form">
+                            <div class="form-group">
+                                <label for="nombreContacto">Nombre Contacto *</label><br />
+                                <input type="text" class="form-control input-sm" id="nombreContacto" placeholder="Introduzca nombre" style="width: 200px;" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="apellidoContacto">Apellido Contacto *</label><br />
+                                <input type="text" class="form-control input-sm" id="apellidoContacto" placeholder="Introduzca apellido" style="width: 200px;">
+                            </div>
+                        </form>
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="nameCompany">Compa&#241;ia (no requerido)</label>
+                                <input type="text" class="form-control input-sm" id="nameCompany" placeholder="Introduzca nombre compa&#241;ia">
+                                <label for="phoneCodes">Pa&#237;s / C&#243;digo Zona</label>
+                                <select class="form-control" id="phoneCodes">
+                                    <option value="United States +1" selected>United States +1</option>
+                                    <option value="Venezuela +58">Venezuela +58</option>
+                                </select>
+                                <label for="phoneNumber">Tel&#233;fono *</label>
+                                <input type="text" class="form-control input-sm" id="phoneNumber" placeholder="Introduzca n&#250;mero telef&#243;nico">
+                                <label for="emailContacto">Email *</label>
+                                <input type="text" class="form-control input-sm" id="emailContacto" placeholder="Introduzca correo electronico">
+                                <label for="observacionContacto">Informaci&#243;n Adicional o Requerimiento</label>
+                                <textarea class="form-control" rows="3" id="observacionContacto"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <h3>Detalles Vuelo</h3>
+                        <form class="form-inline" role="form">
+                            <div class="radio-inline">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                    Ida y Vuelta
+                                </label>
+                            </div>
+                            <div class="radio-inline">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                    Solo Ida
+                                </label>
+                            </div>
+                        </form>
+                        <form class="form-inline" role="form">
+                            <div class="form-group">
+                                <label for="nombreSalida">Salida *</label><br />
+                                <input type="text" class="form-control input-sm" id="nombreSalida" placeholder="Introduzca salida" style="width: 200px;" required><br />
+                                <label for="fechaSalida">Fecha Salida *</label><br />
+                                <input type="text" class="form-control input-sm" id="fechaSalida" placeholder="Introduzca fecha" style="width: 200px;" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="nombreLlegada">Destino *</label><br />
+                                <input type="text" class="form-control input-sm" id="nombreLlegada" placeholder="Introduzca destino" style="width: 200px;"><br />
+                                <label for="fechaLlegada">Fecha Llegada *</label><br />
+                                <input type="text" class="form-control input-sm" id="fechaLlegada" placeholder="Introduzca fecha" style="width: 200px;" required>
+                            </div>
+                        </form>
+                        <form role="form">
+                            <label for="numeroPasajeros"># de Pasajeros *</label>
+                            <input type="text" class="form-control input-sm" id="numeroPasajeros" placeholder="# Pasajeros" style="width: 100px;">
+                            <br />
+                            <button type="submit" class="btn btn-default">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row lightbox-bar"></div>
+        </div>
+    </div>
+
+    <!--boilerplate-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function (b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l; b[l] || (b[l] =
+            function () { (b[l].q = b[l].q || []).push(arguments) }); b[l].l = +new Date;
+            e = o.createElement(i); r = o.getElementsByTagName(i)[0];
+            e.src = '//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X'); ga('send', 'pageview');
+    </script>
+</body>
+</html>
