@@ -28,6 +28,7 @@ body {
 h2 {
 	font-family: 'TrajanPro-Regular', 'Tahoma';
 	font-weight: normal;
+	font-size: larger;
 	color: #0A668E;
 }
 
@@ -52,7 +53,7 @@ h3 {
 	}
 
 #mainmenu {
-	width: 1005px;
+	width: 950px;
 	background-image: none;
 	overflow: hidden;
 }
@@ -117,16 +118,16 @@ h3 {
 	}
 
 #search-area {
-	background: url('../img/menu/search_bar.jpg') center top no-repeat;
-	width: 276px;
+	background: url('../img/menu/search_bar.jpg') left top no-repeat;
+	width: 215px;
 	height: 29px;
 	float: left;
 }
 
 #input-search {
 	margin-top: 3px;
-	margin-left: 60px;
-	width: 200px;
+	margin-left: 55px;
+	width: 155px;
 	font-size: small;
 }
 
@@ -176,25 +177,38 @@ h3 {
 	color: #0A668E;
 }
 
-#lightbox-empresa-left {
-	height: 494px;
-	background-image: url('../img/shadow.png'), url('../img/fondo_texto.jpg');
-	background-position: right center, left center;
-	background-repeat: no-repeat, no-repeat;
-	background-color: white;
+.lightbox-left {
+	background-image: url('../img/fondo_texto.jpg');
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	-moz-background-size: 100%;
+	-webkit-background-size: 100%;
+	background-size: 100%;
 	padding: 50px 50px 50px 50px;
 }
 
 #lightbox-empresa-right {
 	height: 494px;
-	background-image: url('../img/jet_empresa.jpg');
-	background-position: center top;
-	background-repeat: no-repeat;
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-webkit-background-size: 100% 100%;
-	background-size: 100% 100%;
+	background-image: url('../img/shadow.png'), url('../img/jet_empresa.jpg');
+	background-position: left center, left 10px top;
+	background-repeat: no-repeat, no-repeat;
+	background-color: white;
 }
+
+#lightbox-contactos-right {
+	height: 494px;
+	background-image: url('../img/shadow.png'), url('../img/jet_contactos.jpg');
+	background-position: left center, left 10px top;
+	background-repeat: no-repeat, no-repeat;
+	background-color: white;
+}
+
+#lightbox-faq-right {
+	height: 494px;
+	background-color: #0A668E;
+	color: white;
+}
+
 
 
 /** MainBox Container Styles **/
@@ -206,13 +220,28 @@ h3 {
 	.mainbox .top-left {
 		height: 510px;
 		background-image: url('../img/mainbox/top_marcas.jpg');
-		background-position: top, center;
+		background-position: top center;
 		background-repeat: no-repeat;
 	}
 
 	.mainbox .top-right {
 		height: 510px;
 		background-image: url('../img/mainbox/top_destacadas.jpg');
-		background-position: top, right;
-		background-repeat: repeat-x;
+		background-position: right top;
+		background-repeat: no-repeat;
+		/*background-color: #254963;*/
 	}
+
+/* Contactos */
+#contactos ul li {
+	padding-bottom: 20px;
+	list-style: none;
+	color: #C3943C;
+	font-family: 'TrajanPro-Regular', 'Tahoma';
+	font-size: 12pt;
+	font-weight: 500;
+}
+
+#contactos img {
+	padding-right: 12px;
+}
