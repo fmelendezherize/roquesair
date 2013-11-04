@@ -21,6 +21,12 @@
 	font-style: italic;
 }
 
+@font-face {
+	font-family: 'Glyphicons Halflings';
+	src: url('../fonts/glyphicons-halflings-regular.eot');
+	src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
 body {
 	background: url('../img/roquesair_background.jpg') center top repeat;
 }
@@ -209,8 +215,6 @@ h3 {
 	color: white;
 }
 
-
-
 /** MainBox Container Styles **/
 .mainbox {
 	margin-top: 20px;
@@ -218,18 +222,18 @@ h3 {
 }
 
 	.mainbox .top-left {
-		height: 510px;
+		height: 530px;
 		background-image: url('../img/mainbox/top_marcas.jpg');
 		background-position: top center;
 		background-repeat: no-repeat;
 	}
 
 	.mainbox .top-right {
-		height: 510px;
+		height: 530px;
 		background-image: url('../img/mainbox/top_destacadas.jpg');
 		background-position: right top;
 		background-repeat: no-repeat;
-		/*background-color: #254963;*/
+		background-color: #254963;
 	}
 
 /* Contactos */
@@ -244,4 +248,95 @@ h3 {
 
 #contactos img {
 	padding-right: 12px;
+}
+
+#carousel-home {
+	position: absolute;
+	top: 31px;
+	left: 0px;
+	float: left;
+	height: 499px;
+	width: 876px;
+}
+
+.item {
+	height: 499px;
+	background-image: url('../img/mainbox/bottom_descripcion.png');
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	background-color: #254963;
+}
+
+	.item img {
+		height: 466px;
+		width: 876px;
+	}
+
+.carousel-caption {
+	left: 0px;
+	width: 876px;
+	top: 450px;
+	color: white;
+	font-family: 'TrajanPro-Regular', 'Tahoma';
+	font-size: 12pt;
+}
+
+	.carousel-caption .nombre-aeronave {
+		text-align: left;
+		padding-left: 10px;
+		width: 280px;
+		position: absolute;
+	}
+
+	.carousel-caption a:link, a:visited {
+		color: white;
+		text-decoration: none;
+	}
+
+	.carousel-caption a:hover {
+		text-decoration: underline;
+	}
+
+	.carousel-caption .data-aeronave {
+		text-align: right;
+		padding-right: 20px;
+		width: auto;
+		margin-left: 280px;
+		font-size: smaller;
+	}
+
+.carousel-control {
+	height: 90%;
+}
+
+#accordion {
+    position: absolute;
+	top: 31px;
+	left: 0px;
+	max-height: 499px;
+    width: 175px;
+    overflow-x:hidden;
+	overflow-y:auto;
+}
+
+.panel-heading {
+    height: 31px;
+    background-color: #0A668E;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+.ilpanele {
+    border: none;
+    background-color: #0A668E;
+}
+
+.panel-group .panel {
+    border-radius: 0px;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+.panel-group .panel + .panel {
+    margin-top: 0px;
 }
