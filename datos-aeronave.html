@@ -8,15 +8,15 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>RoquesAir Homepage</title>
+    <title>RoquesAir Datos Aeronave</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/roquesair.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
@@ -24,126 +24,537 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <!-- Add your site or application content here -->
-    <div>
-        <img src="img/roquesair_banner.jpg" alt="roquesair-banner" />
-    </div>
-
-    <div id="menu">
-        <iframe id="menuroquesair" src="menuroquesair.html"></iframe>
-    </div>
-
-    <div id="mainbox">
-        <div id="mainbox-leftcolumn">
-            <div id="mainbox-leftcolumn-top"></div>
-            <div id="mainbox-leftcolumn-bottom">
-                <iframe id="acordeonroquesair" src="acordeonroquesair.html"></iframe>
-            </div>
+    <div class="container maincontainer">
+        <div id="mainmenu" class="container menuroquesair">
+            <ul class="list-inline">
+                <li><a id="menu-home" href="homepage.html" target="_parent" title="Ir a Homepage"></a></li>
+                <li><a id="menu-empresa" href="empresa.html" target="_parent" title="Ir a Empresa"></a></li>
+                <li><a id="menu-contactos" href="contactos.html" target="_parent" title="Ir a Contactos"></a></li>
+                <li><a id="menu-faq" href="faq.html" target="_parent" title="Ir a FAQ"></a></li>
+                <li><a id="menu-vuelos" href="vuelos-charter.html" target="_parent" title="Ir a Vuelos Charter"></a></li>
+                <li><a id="menu-buscar" href="siteonconstruction.html" target="_parent" title="Ir a motor de b&#250;squeda"></a></li>
+                <li id="search-area">
+                    <input id="input-search" type="search" />
+                </li>
+            </ul>
         </div>
-        <div id="mainbox-rightcolumn">
-            <div id="dataaeronave-mainbox-rightcolumn-top" class="banner-texto">Cessna Citation 500</div>
-            <div id="dataaeronave-mainbox-rightcolumn-center">
-                <div id="dataaeronave-mainbox-rightcolumn-center-left">
-                    <div id="DataAeronaveBanner" class="dataaeronave-banner">
-                        <ul>
-                            <li>
-                                <img src="img/data-aeronave/citation-500/01.jpg" alt="" />
-                            </li>
-                            <li>
-                                <img src="img/data-aeronave/citation-500/02.jpg" alt="" />
-                            </li>
-                            <li>
-                                <img src="img/data-aeronave/citation-500/03.jpg" alt="" />
-                            </li>
-                            <li>
-                                <img src="img/data-aeronave/citation-500/04.jpg" alt="" />
-                            </li>
-                            <li>
-                                <img src="img/data-aeronave/citation-500/05.jpg" alt="" />
-                            </li>
-                            <li>
-                                <img src="img/data-aeronave/citation-500/06.jpg" alt="" />
-                            </li>
-                            <li>
-                                <img src="img/data-aeronave/citation-500/07.jpg" alt="" />
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="DataAeronaveVideo">
-                        <iframe width="529" height="281" src="//www.youtube.com/embed/F6QvsBiYWHY?autohide=1" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div id="dataaeronave-mainbox-rightcolumn-center-right">
-                        <img src="img/data-aeronave/ficha_aeronave.jpg" alt="" />
+        <div class="container mainbox">
+            <div class="row">
+                <!-- Botonera Izquierda -->
+                <div class="col-xs-3 col-md-2 top-left">
+                    <!-- Jets -->
+                    <div class="panel-group" id="accordion-jet">
+                        <!-- Bombardier -->
+                        <div class="panel panel-default panel-botonera">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion-jet" href="#collapseOne">
+                                        <img src="img/botonera/boton_bombardier.jpg" alt="" />
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <ul class="list-unstyled">
+                                        <li>No Disponible</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Cessna -->
+                        <div class="panel panel-default panel-botonera">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion-jet" href="#collapseTwo">
+                                        <img src="img/botonera/boton_cessna.jpg" alt="" />
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="panel-group" id="accordion-jet-cessna">
+                                        <div class="panel panel-default panel-botonera">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title" style="padding-top:5px;padding-left:15px;">
+                                                    <a data-toggle="collapse" data-parent="#accordion-jet-cessna" href="#collapseOneCessna">
+                                                        &rsaquo; Jet Aircraft
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseOneCessna" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="datos-aeronave.html" target="_parent">Citation 500</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default panel-botonera">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title" style="padding-top:5px;padding-left:15px;">
+                                                    <a data-toggle="collapse" data-parent="#accordion-jet-cessna" href="#collapseTwoCessna">
+                                                        &rsaquo; Turboprop
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseTwoCessna" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <ul class="list-unstyled">
+                                                        <li>No Disponible</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default panel-botonera">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title" style="padding-top:5px;padding-left:15px;">
+                                                    <a data-toggle="collapse" data-parent="#accordion-jet-cessna" href="#collapseThreeCessna">
+                                                        &rsaquo; Piston Twin
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseThreeCessna" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <ul class="list-unstyled">
+                                                        <li>No Disponible</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default panel-botonera">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title" style="padding-top:5px;padding-left:15px;">
+                                                    <a data-toggle="collapse" data-parent="#accordion-jet-cessna" href="#collapseFourCessna">
+                                                        &rsaquo; Piston Single
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseFourCessna" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <ul class="list-unstyled">
+                                                        <li>No Disponible</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- McDonnel Douglas -->
+                        <div class="panel panel-default panel-botonera">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion-jet" href="#collapseThree">
+                                        <img src="img/botonera/boton_mcdonnelldouglas.jpg" alt="" />
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="panel-group" id="accordion-jet-mac">
+                                        <div class="panel panel-default panel-botonera">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title" style="padding-top:5px;padding-left:15px;">
+                                                    <a data-toggle="collapse" data-parent="#accordion-jet-mac" href="#collapseOneMac">
+                                                        &rsaquo; Jet Aircraft
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseOneMac" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <ul class="list-unstyled">
+                                                        <li>No Disponible</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default panel-botonera">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title" style="padding-top:5px;padding-left:15px;">
+                                                    <a data-toggle="collapse" data-parent="#accordion-jet-mac" href="#collapseTwoMac">
+                                                        &rsaquo; Turboprop
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseTwoMac" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <ul class="list-unstyled">
+                                                        <li>No Disponible</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Embraer -->
+                        <div class="panel panel-default panel-botonera">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion-jet" href="#collapseFour">
+                                        <img src="img/botonera/boton_embraer.jpg" alt="" />
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="panel-group" id="accordion-jet-embraer">
+                                        <div class="panel panel-default panel-botonera">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title" style="padding-top:5px;padding-left:15px;">
+                                                    <a data-toggle="collapse" data-parent="#accordion-jet-embraer" href="#collapseOneEmbraer">
+                                                        &rsaquo; Jet Aircraft
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseOneEmbraer" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <ul class="list-unstyled">
+                                                        <li>No Disponible</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default panel-botonera">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title" style="padding-top:5px;padding-left:15px;">
+                                                    <a data-toggle="collapse" data-parent="#accordion-jet-embraer" href="#collapseTwoEmbraer">
+                                                        &rsaquo; Turboprop
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseTwoEmbraer" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <ul class="list-unstyled">
+                                                        <li>No Disponible</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default panel-botonera">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title" style="padding-top:5px;padding-left:15px;">
+                                                    <a data-toggle="collapse" data-parent="#accordion-jet-embraer" href="#collapseThreeEmbraer">
+                                                        &rsaquo; Piston Twin
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseThreeEmbraer" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <ul class="list-unstyled">
+                                                        <li>No Disponible</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default panel-botonera">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion-jet" href="#collapseFive">
+                                        <img src="img/botonera/boton_hawker.jpg" alt="" />
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <ul class="list-unstyled">
+                                        <li>No Disponible</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default panel-botonera">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion-jet" href="#collapseSix">
+                                        <img src="img/botonera/boton_dassault.jpg" alt="" />
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseSix" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <ul class="list-unstyled">
+                                        <li>No Disponible</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default panel-botonera">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion-jet" href="#collapseSeven">
+                                        <img src="img/botonera/boton_boeing.jpg" alt="" />
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseSeven" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <ul class="list-unstyled">
+                                        <li>No Disponible</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default panel-botonera">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion-jet" href="#collapseEight">
+                                        <img src="img/botonera/boton_airbus.jpg" alt="" />
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseEight" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <ul class="list-unstyled">
+                                        <li>No Disponible</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Helicopteros -->
+                        <img src="img/botonera/boton_helicopteros.jpg" alt="" />
+                        <div class="panel panel-default panel-botonera">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion-jet" href="#collapseOneHeli">
+                                        <img src="img/botonera/boton_bell.jpg" alt="" />
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOneHeli" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="panel-group" id="accordion-heli-bell">
+                                        <div class="panel panel-default panel-botonera">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title" style="padding-top:5px;padding-left:15px;">
+                                                    <a data-toggle="collapse" data-parent="#accordion-heli-bell" href="#collapseOneBell">
+                                                        &rsaquo; Turbine
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseOneBell" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <ul class="list-unstyled">
+                                                        <li>No Disponible</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default panel-botonera">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title" style="padding-top:5px;padding-left:15px;">
+                                                    <a data-toggle="collapse" data-parent="#accordion-heli-bell" href="#collapseTwoBell">
+                                                        &rsaquo; Piston
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseTwoBell" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <ul class="list-unstyled">
+                                                        <li>No Disponible</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default panel-botonera">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion-jet" href="#collapseTwoHeli">
+                                        <img src="img/botonera/boton_robinson.jpg" alt="" />
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwoHeli" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <ul class="list-unstyled">
+                                        <li>No Disponible</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default panel-botonera">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion-jet" href="#collapseThreeHeli">
+                                        <img src="img/botonera/boton_mcdonnelldouglas_helicopteros.jpg" alt="" />
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThreeHeli" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <ul class="list-unstyled">
+                                        <li>No Disponible</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="img/botonera/boton_hangares.jpg" alt="" />
+                        <img src="img/botonera/boton_alquiler.jpg" alt="" style="padding:0px;" />
+                        <img src="img/botonera/boton_compra.jpg" alt="" style="padding:0px;" />
                     </div>
                 </div>
-                <div id="dataaeronave-mainbox-rightcolumn-center-data">
-                    <div id="dataaeronave-linkvideo"><a id="linkiado" href="javascript:void(0)">Ver Video</a></div>
-                    <div id="dataaeronave-avionica" class="dataaeronave">
-                        <table>
-                            <tr>
-                                <td><strong>ADF</strong>: Collins ADF-60</td>
-                                <td><strong>Autopilot</strong>: Sperry SPZ-500 IFCS</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Avionics Package:</strong> Sperry SPZ-500 IFCS / Pro Line</td>
-                                <td><strong>Communication Radios:</strong> Dual Collins VHF-20A</td>
-                            </tr>
-                            <tr>
-                                <td><strong>DME:</strong> Collins DME-40</td>
-                                <td><strong>Flight Director:</strong> Sperry SPZ-500 IFCS 5-inch</td>
-                            </tr>
-                            <tr>
-                                <td><strong>GPS:</strong> Garmin GPS-500W (IFR)</td>
-                                <td><strong>Navigation Radios:</strong> Dual Collins VIR-30A</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Radar Altimeter:</strong> Bendix/King</td>
-                                <td><strong>RMI:</strong> Dual</td>
-                            </tr>
-                            <tr>
-                                <td><strong>TAWS:</strong> Garmin GPS-500W (coupled)</td>
-                                <td><strong>TCAS:</strong> BFGoodrich TRC-899 Skywatch HP</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Transponder:</strong> Dual Collins TDR-90</td>
-                                <td><strong>Weather Radar:</strong> Bendix/King RDR-1100 color</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div id="dataaeronave-comentarios" class="dataaeronave">
-                        <table>
-                            <tr>
-                                <td><strong>General</strong>: Thrust reversers, engine synch, high altitude kit, Phase 1A engine mod, Concorde RG-380 sealed lead acid battery, long-range oxygen system, Keith freon air conditioning w/cool sticks</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Detalles de Cabina:</strong> Garmin GPS-500W TAWS, angle of attack, altitude alerter & preselector, standby gyro, satellite weather, Garmin GDL-69 XM weather, 2-inch standby artificial horizon, XM NEXRAD, Davtron digital clock</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div id="dataaeronave-precios" class="dataaeronave">
-                        <table>
-                            <tr>
-                                <td><strong>230.000 USD (Negociables)</strong></td>
-                            </tr>
-                        </table>
-                    </div>
+                <!-- Datos Aeronave Derecha -->
+                <div class="col-xs-9 col-md-10 top-right">
+                    <div class="container container-data-aeronave">
+                        <div class="row">
+                            <div class="col-md-8 col-izq-data-aeronave">
+                                <div id="carousel-datos-aeronave" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carousel-datos-aeronave" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carousel-datos-aeronave" data-slide-to="1"></li>
+                                        <li data-target="#carousel-datos-aeronave" data-slide-to="2"></li>
+                                        <li data-target="#carousel-datos-aeronave" data-slide-to="3"></li>
+                                        <li data-target="#carousel-datos-aeronave" data-slide-to="4"></li>
+                                        <li data-target="#carousel-datos-aeronave" data-slide-to="5"></li>
+                                        <li data-target="#carousel-datos-aeronave" data-slide-to="6"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <div>
+                                                <img src="img/data-aeronave/citation-500/01.jpg" alt="" />
+                                                <div class="carousel-caption">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div>
+                                                <img src="img/data-aeronave/citation-500/02.jpg" alt="" />
+                                                <div class="carousel-caption">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div>
+                                                <img src="img/data-aeronave/citation-500/03.jpg" alt="" />
+                                                <div class="carousel-caption">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div>
+                                                <img src="img/data-aeronave/citation-500/04.jpg" alt="" />
+                                                <div class="carousel-caption">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div>
+                                                <img src="img/data-aeronave/citation-500/05.jpg" alt="" />
+                                                <div class="carousel-caption">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div>
+                                                <img src="img/data-aeronave/citation-500/06.jpg" alt="" />
+                                                <div class="carousel-caption">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div>
+                                                <img src="img/data-aeronave/citation-500/07.jpg" alt="" />
+                                                <div class="carousel-caption">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="left carousel-control" href="#carousel-datos-aeronave" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left">&lsaquo;</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#carousel-datos-aeronave" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right">&rsaquo;</span>
+                                    </a>
+                                </div>
+                                <div id="DataAeronaveVideo">
+                                    <iframe src="//www.youtube.com/embed/F6QvsBiYWHY?autohide=1" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <!-- Columna derecha -->
+                            <div class="col-md-4 col-der-data-aeronave">
+                                <img src="img/data-aeronave/ficha_aeronave.jpg" alt="" />
+                            </div>
+                        </div>
+                        <div id="dataaeronave-linkvideo"><a id="linkiado" href="javascript:void(0)">Ver Video</a></div>
+                        <div id="dataaeronave-avionica" class="dataaeronave">
+                            <table class="table table-responsive">
+                                <tr>
+                                    <td><strong>ADF</strong>: Collins ADF-60</td>
+                                    <td><strong>Autopilot</strong>: Sperry SPZ-500 IFCS</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Avionics Package:</strong> Sperry SPZ-500 IFCS / Pro Line</td>
+                                    <td><strong>Communication Radios:</strong> Dual Collins VHF-20A</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>DME:</strong> Collins DME-40</td>
+                                    <td><strong>Flight Director:</strong> Sperry SPZ-500 IFCS 5-inch</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>GPS:</strong> Garmin GPS-500W (IFR)</td>
+                                    <td><strong>Navigation Radios:</strong> Dual Collins VIR-30A</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Radar Altimeter:</strong> Bendix/King</td>
+                                    <td><strong>RMI:</strong> Dual</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>TAWS:</strong> Garmin GPS-500W (coupled)</td>
+                                    <td><strong>TCAS:</strong> BFGoodrich TRC-899 Skywatch HP</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Transponder:</strong> Dual Collins TDR-90</td>
+                                    <td><strong>Weather Radar:</strong> Bendix/King RDR-1100 color</td>
+                                </tr>
+                            </table>
+                        </div>
+                            <div id="dataaeronave-comentarios" class="dataaeronave">
+                                <table class="table">
+                                    <tr>
+                                        <td><strong>General</strong>: Thrust reversers, engine synch, high altitude kit, Phase 1A engine mod, Concorde RG-380 sealed lead acid battery, long-range oxygen system, Keith freon air conditioning w/cool sticks</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Detalles de Cabina:</strong> Garmin GPS-500W TAWS, angle of attack, altitude alerter & preselector, standby gyro, satellite weather, Garmin GDL-69 XM weather, 2-inch standby artificial horizon, XM NEXRAD, Davtron digital clock</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div id="dataaeronave-precios" class="dataaeronave">
+                                <table>
+                                    <tr>
+                                        <td><strong>230.000 USD (Negociables)</strong></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
                 </div>
             </div>
-            <div id="datajet-mainbox-rightcolumn-bottom"></div>
         </div>
     </div>
 
     <!--boilerplate-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
-    <script src="js/vendor/unslider.js"></script>
     <script src="js/main.js"></script>
     <script>
         $(document).ready(function () {
-            $('#linkiado').click(function () {
-                onClickVerVideo();
+            $('.carousel').carousel({
+                interval: 6000
             });
-            activarDataAeronaveBanner();
+        });
+        $('#linkiado').click(function () {
+            onClickVerVideo();
         });
     </script>
 

@@ -49,7 +49,7 @@ h3 {
     width: 1005px;
     height: auto;
     padding: 0px;
-    margin-top: 181px;
+    margin-top: 171px;
 }
 
     .menuroquesair iframe {
@@ -259,7 +259,7 @@ h3 {
     width: 876px;
 }
 
-.item {
+#carousel-home .item {
     height: 499px;
     background-image: url('../img/mainbox/bottom_descripcion.png');
     background-position: bottom left;
@@ -267,12 +267,12 @@ h3 {
     background-color: #254963;
 }
 
-    .item img {
+#carousel-home .item img {
         height: 466px;
         width: 876px;
     }
 
-.carousel-caption {
+#carousel-home .carousel-caption {
     left: 0px;
     width: 876px;
     top: 450px;
@@ -281,23 +281,23 @@ h3 {
     font-size: 12pt;
 }
 
-    .carousel-caption .nombre-aeronave {
+    #carousel-home .carousel-caption .nombre-aeronave {
         text-align: left;
         padding-left: 10px;
         width: 280px;
         position: absolute;
     }
 
-    .carousel-caption a:link, a:visited {
+    #carousel-home .carousel-caption a:link, a:visited {
         color: white;
         text-decoration: none;
     }
 
-    .carousel-caption a:hover {
+    #carousel-home .carousel-caption a:hover {
         text-decoration: underline;
     }
 
-    .carousel-caption .data-aeronave {
+    #carousel-home .carousel-caption .data-aeronave {
         text-align: right;
         padding-right: 20px;
         width: auto;
@@ -305,7 +305,7 @@ h3 {
         font-size: smaller;
     }
 
-.carousel-control {
+#carousel-home .carousel-control {
     height: 90%;
 }
 
@@ -378,4 +378,120 @@ h3 {
 
 .panel-group .panel-heading + .panel-collapse .panel-body {
     border-top: 0px none #DDDDDD;
+}
+
+/* Data Aeronave */
+
+.container-data-aeronave {
+    position: absolute;
+    top: 31px;
+    left: 0px;
+    float: left;
+    max-height: 499px;
+    width: 876px;
+    background-color: white;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.col-der-data-aeronave {
+    height: 300px;
+    background-image: url('../img/data-aeronave/head_datos_aeronave.jpg');
+    background-position: right top;
+    background-repeat: repeat-x;
+}
+
+.col-der-data-aeronave img {
+    position: absolute;
+    left: 0px;
+    padding-top: 17px;
+    width: 292px;
+}
+
+.col-izq-data-aeronave {
+    height: 297px;
+}
+
+#carousel-datos-aeronave {
+    top: 0px;
+    height: 297px;
+    width: 584px;
+    left: 0px;
+    float: left;
+    position: absolute;
+}
+
+#carousel-datos-aeronave img {
+    height: 297px;
+    width: 584px;
+}
+
+.dataaeronave {
+	background-position: top left;
+	background-repeat: no-repeat;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-family: 'TrajanPro-Regular', 'MyriadPro-Regular', 'Tahoma';
+	font-size: small;
+}
+
+	.dataaeronave table {
+		border: none;
+	}
+
+	.dataaeronave td {
+		padding-right: 20px;
+	}
+
+#dataaeronave-avionica {
+	background-image: url('../img/data-aeronave/head_avionica.png');
+}
+
+#dataaeronave-comentarios {
+	background-image: url('../img/data-aeronave/head_comentarios.png');
+}
+
+#dataaeronave-precios {
+	background-image: url('../img/data-aeronave/head_precios.png');
+	font-size: 15pt;
+}
+
+#dataaeronave-linkvideo {
+	padding-bottom: 15px;
+	padding-left: 15px;
+	background-image: url('../img/data-aeronave/btn_play_video.jpg');
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+
+	#dataaeronave-linkvideo a {
+		padding-left: 15px;
+		color: #0A668E;
+		text-decoration: none;
+		font-family: 'TrajanPro-Regular', 'Tahoma';
+	}
+
+		#dataaeronave-linkvideo a:visited {
+			color: #0A668E;
+			border: none;
+		}
+
+		#dataaeronave-linkvideo a:hover {
+			text-decoration: underline;
+		}
+
+#DataAeronaveVideo {
+    top: 0px;
+    height: 297px;
+    width: 584px;
+    left: 0px;
+    float: left;
+    position: absolute;
+	overflow: hidden;
+	display: none;
+}
+
+#DataAeronaveVideo iframe {
+    height: 297px;
+    width: 584px;
 }
