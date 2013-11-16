@@ -142,7 +142,7 @@ h3 {
     background-image: url('../img/roquesair_banner.jpg');
     background-position: center top;
     background-repeat: no-repeat;
-    background-color: white;
+    /*background-color: white;*/
     -moz-background-size: 100%;
     -o-background-size: 100%;
     -webkit-background-size: 100%;
@@ -184,9 +184,11 @@ h3 {
 }
 
 .lightbox-left {
+    height: 494px;
     background-image: url('../img/fondo_texto.jpg');
     background-position: left bottom;
     background-repeat: no-repeat;
+    background-color: white;
     -moz-background-size: 100%;
     -webkit-background-size: 100%;
     background-size: 100%;
@@ -196,7 +198,7 @@ h3 {
 #lightbox-empresa-right {
     height: 494px;
     background-image: url('../img/shadow.png'), url('../img/jet_empresa.jpg');
-    background-position: left center, left 10px top;
+    background-position: right 465px center, right top;
     background-repeat: no-repeat, no-repeat;
     background-color: white;
 }
@@ -204,7 +206,7 @@ h3 {
 #lightbox-contactos-right {
     height: 494px;
     background-image: url('../img/shadow.png'), url('../img/jet_contactos.jpg');
-    background-position: left center, left 10px top;
+    background-position: right 465px center, right top;
     background-repeat: no-repeat, no-repeat;
     background-color: white;
 }
@@ -230,10 +232,13 @@ h3 {
 
     .mainbox .top-right {
         height: 530px;
+        background-color: #254963;
+    }
+
+    .mainbox .home {
         background-image: url('../img/mainbox/top_destacadas.jpg');
         background-position: right top;
         background-repeat: no-repeat;
-        background-color: #254963;
     }
 
 /* Contactos */
@@ -333,8 +338,7 @@ h3 {
     background-color: #254963;
     color: white;
     font-family: 'TrajanPro-Regular', 'Tahoma';
-    font-weight: bolder;
-    font-size: 10pt;
+    font-size: 8pt;
     border-bottom: 0px none white;
 }
 
@@ -343,7 +347,7 @@ h3 {
     background-color: #254963;
     color: white;
     font-family: 'TrajanPro-Regular', 'Tahoma';
-    font-size: 10pt;
+    font-size: 8pt;
 }
 
 .panel-botonera a {
@@ -444,23 +448,36 @@ h3 {
 	}
 
 #dataaeronave-avionica {
-	background-image: url('../img/data-aeronave/head_avionica.png');
+    background-image: url('../img/data-aeronave/head_avionica.png');
+    -moz-background-size: 25%;
+    -o-background-size: 25%;
+    -webkit-background-size: 25%;
+    background-size: 25%;
 }
 
 #dataaeronave-comentarios {
 	background-image: url('../img/data-aeronave/head_comentarios.png');
+    -moz-background-size: 25%;
+    -o-background-size: 25%;
+    -webkit-background-size: 25%;
+    background-size: 25%;
 }
 
 #dataaeronave-precios {
 	background-image: url('../img/data-aeronave/head_precios.png');
+    -moz-background-size: 25%;
+    -o-background-size: 25%;
+    -webkit-background-size: 25%;
+    background-size: 25%;
 	font-size: 15pt;
 }
 
 #dataaeronave-linkvideo {
+    padding-top: 15px;
 	padding-bottom: 15px;
 	padding-left: 15px;
 	background-image: url('../img/data-aeronave/btn_play_video.jpg');
-	background-position: left top;
+	background-position: left top 15px;
 	background-repeat: no-repeat;
 }
 
@@ -483,7 +500,7 @@ h3 {
 #DataAeronaveVideo {
     top: 0px;
     height: 297px;
-    width: 584px;
+    width: 572px;
     left: 0px;
     float: left;
     position: absolute;
@@ -493,5 +510,13 @@ h3 {
 
 #DataAeronaveVideo iframe {
     height: 297px;
-    width: 584px;
+    width: 572px;
+}
+
+.data-aeronave-nombre {
+    font-family: 'TrajanPro-Regular', 'MyriadPro-Regular', 'Tahoma';
+    font-size: medium;
+    text-align: right;
+    color: white;
+    padding-top: 5px;
 }
